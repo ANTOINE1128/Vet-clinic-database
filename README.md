@@ -24,7 +24,6 @@ This repository includes files with plain SQL that can be used to recreate a Vet
 
 - PostgreSQL
 
-
 ## Getting Started <a name="getting-started"></a>
 
 ### Setup <a name="setup"></a>
@@ -42,16 +41,12 @@ To run this project, you need to have PostgreSQL installed on your local machine
    ``bash
    git clone https://github.com/ANTOINE1128/Vet-clinic-database.git
 ### Usage
-
-
 # To Create the database in PostgreSQLexecute the following command:
   createdb vet_clinic
   Create the database in PostgreSQL:
 
-
 createdb vet_clinic
 Navigate to the repository folder:
-
 
 cd Vet-clinic-database
 Import the schema into the database:
