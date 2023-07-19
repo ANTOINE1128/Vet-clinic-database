@@ -101,10 +101,9 @@ Feel free to check the [issues page](../../issues/).
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project please don't forget to give it a star 
+If you like this project please don't forget to give it a star on Github! 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
@@ -116,12 +115,8 @@ also, I would like to thank my code reviewer(s) for their comments and suggestio
 
 
 <!-- LICENSE -->
-
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
-
-
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
