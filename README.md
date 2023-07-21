@@ -23,7 +23,22 @@ This repository includes files with plain SQL that can be used to recreate a Vet
 #### Tech Stack <a name="tech-stack"></a>
 
 - PostgreSQL
+  
+### Key Features <a name="key-features"></a>
 
+- **Animal Management:** The database allows you to store information about animals, including their names, species, and medical history.
+
+- **Owner Information:** You can also store data about animal owners, such as their names, contact details, and the animals they own.
+
+- **Employee Records:** The database includes tables to manage clinic employees' information, including their roles and contact information.
+
+### Future Features <a name="future-features"></a>
+
+- **Visit Tracking:** Add a feature to track and manage visits made by animals to the clinic, including appointment details, diagnosis, and treatment information.
+
+- **Billing and Payments:** Implement a module to manage billing and payments for clinic services, including generating invoices and tracking payment records.
+
+- **Medical Records Integration:** Integrate the database with external systems or APIs to access and store medical records, lab results, and other relevant data.
 ## Getting Started <a name="getting-started"></a>
 
 ### Setup <a name="setup"></a>
