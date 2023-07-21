@@ -18,7 +18,7 @@ ROLLBACK;
 BEGIN;
 UPDATE animals SET species = 'digimon' WHERE name LIKE '%mon';
 UPDATE animals SET species = 'pokemon' WHERE name NOT LIKE '%mon';
-SELECT * FROM animals WHERE name LIKE '%mon';
+SELECT * FROM animals WHERE name LIKE '%mo                    n';
 SELECT * FROM animals WHERE name NOT LIKE '%mon';
 COMMIT;
 SELECT * FROM animals;
@@ -50,4 +50,62 @@ SELECT species, AVG(escape_attempts) AS average_escape_attempts
 FROM animals
 WHERE date_of_birth BETWEEN '1990-01-01' AND '2000-12-31'
 GROUP BY species;
+BEGIN;
+UPDATE animals
+SET species_id = (SELECT id FROM species WHERE name = 'Digimon')
+WHERE name LIKE '%mon';
 
+UPDATE animals
+SET species_id = (SELECT id FROM species WHERE name = 'Pokemon')
+WHERE name NOT LIKE '%mon';
+COMMIT;
+
+
+SELECT animals.name AS animal_name
+FROM animals
+JOIN owners ON animals.owner_id = owners.id
+WHERE owners.full_name = 'Melody Pond';
+
+SELECT * FROM animals  WHERE owners.species= 'Pokemon'
+JOIN owners ON animals.species_id = species
+WHERE owners.full_name = 'Melody Pond';
+
+SELECT *
+FROM animals
+WHERE species_id = (SELECT id FROM species WHERE name = 'Pokemon');
+SELECT o.full_name AS owner_name, a.name AS animal_name
+FROM owners o
+LEFT JOIN animals a ON o.id = a.owner_id;
+SELECT o.full_name AS owner_name, a.name AS animal_name
+FROM owners o
+LEFT JOIN animals a ON o.id = a.owner_id
+WHERE a.id IS NULL;
+
+
+SELECT s.name AS species_name, COUNT(*) AS animal_count
+FROM animals a
+JOIN species s ON a.species_id = s.id
+GROUP BY s.name;
+
+SELECT a.name AS digimon_name
+FROM animals a
+JOIN owners o ON a.owner_id = o.id
+JOIN species s ON a.species_id = s.id
+WHERE o.full_name = 'Jennifer Orwell' AND s.name = 'Digimon';
+
+SELECT *
+FROM animals a
+JOIN owners o ON a.owner_id = o.id
+WHERE o.full_name = 'Dean Winchester';
+
+SELECT *
+FROM animals a
+JOIN owners o ON a.owner_id = o.id
+WHERE o.full_name = 'Dean Winchester' AND a.escape_attempts = 0;
+
+SELECT o.full_name, COUNT(*) AS animal_count
+FROM owners o
+JOIN animals a ON o.id = a.owner_id
+GROUP BY o.full_name
+ORDER BY animal_count DESC
+LIMIT 1;
