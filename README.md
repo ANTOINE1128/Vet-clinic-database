@@ -1,5 +1,5 @@
 <!-- TABLE OF CONTENTS -->
-
+ 
 # Vet Clinic Database
 
 This repository includes files with plain SQL that can be used to recreate a Vet Clinic database.
