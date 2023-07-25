@@ -189,3 +189,11 @@ EXPLAIN ANALYZE SELECT * FROM owners where email = 'owner_18327@mail.com';
 CREATE INDEX index_animal_id ON visits (animal_id);
 ANALYZE visits;
 EXPLAIN ANALYZE SELECT COUNT(*) FROM visits where animal_id = 4;
+
+CREATE INDEX index_vet_id ON visits (vet_id);
+ANALYZE visits;
+EXPLAIN ANALYZE SELECT * FROM visits where vet_id = 2;
+
+CREATE INDEX index_email ON owners (email);
+ ANALYZE owners;
+ EXPLAIN ANALYZE SELECT * FROM owners where email = 'owner_18327@mail.com';
