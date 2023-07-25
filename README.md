@@ -105,7 +105,12 @@ Example:
 - GitHub: [@githubhandle](https://github.com/ANTOINE1128)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/antoine-makdessy/)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+👤 **> Prosper kessie**
+- GitHub: [@githubhandle](https://github.com/kessie2862)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/prosperkessie/)
+👤 **> Abidemi Fashoro**
+- GitHub: [@githubhandle](https://github.com/DebyGrey)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/deborah-fashoro)
 
 ## 🤝 Contributing <a name="contributing"></a>
 
@@ -123,8 +128,7 @@ If you like this project please don't forget to give it a star on Github!
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 
-I would like to thank my coding parnter(s) for their contribution to this project
-also, I would like to thank my code reviewer(s) for their comments and suggestions  
+We would like to thank Microverse for this amazing curriculum and a big thanks for the code reviewers for their feedbacks and suggestions. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
